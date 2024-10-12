@@ -70,12 +70,14 @@ const sendCheckouts = () => {
 //     ctx.telegram.sendMessage(channel, Welcome(fullname, username), { disable_web_page_preview: true, parse_mode: 'Markdown' })
 // })
 
-setInterval(async ()=>{
+// setInterval(async ()=>{
     
-  await sendCheckouts()
-  await sendYourAccount()
+//   await sendCheckouts()
+//   await sendYourAccount()
 
 
-},9000)
+// },9000)
+ sendCheckouts()
+ sendYourAccount()
 app.listen(3000, () => console.log("Group server running"))
 bot.launch()
