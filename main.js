@@ -82,7 +82,7 @@ setInterval(async ()=>{
 
 
 
-},1200000)
+},3600000)
 setInterval(async ()=>{
     
     await sendList()
@@ -90,7 +90,7 @@ setInterval(async ()=>{
   
   
   
-  },1800000)
+  },5400000)
 
 app.listen(3000, () => console.log("Group server running"))
 bot.launch()
