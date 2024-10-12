@@ -85,6 +85,7 @@ exports.Congra = (rand,rand_added)=>{
 💸💸💸💸💸💸💸💸💸💸💸💸💸💸
 
 *እርስዎም ጓደኞችዎን አድ በማድረግ ብዙ ብሮችን ይሸለሙ!!*
+https://t.me/AddAndGetPaid https://t.me/AddAndGetPaid
 `
 }
 
