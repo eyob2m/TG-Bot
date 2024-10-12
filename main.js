@@ -5,7 +5,7 @@ const app = express()
 const bot = new Telegraf('7830976697:AAHDQz9G9AArUXNjAoMxYlVkTVasXrUE3GI')
 const channel = '@CryptoEt_airdropC'
 
-const { Namefrom, AddMore, GroupLink, NamefromBot2, Welcome, Checkout, SendAccount  } = require("./extractname");
+const { Namefrom, AddMore, GroupLink, NamefromBot2, Welcome, Checkout, SendAccount, Congra, List  } = require("./extractname");
 const app2 = express()
 const Bot2 = new Telegraf('8149859697:AAFAk8OLFTBRBj_6RZGtZFYMYkodoPJboE0')
 
@@ -60,7 +60,13 @@ const sendCheckouts = () => {
 
     const rand = Math.floor(Math.random() * 260)
     const rand_added = Math.floor(Math.random() * 100) + 30
-    bot.telegram.sendMessage(channel, Checkout(rand, rand_added), { disable_web_page_preview: true, parse_mode: 'Markdown' })
+    bot.telegram.sendMessage(channel, Congra(rand, rand_added), { disable_web_page_preview: true, parse_mode: 'Markdown' })
+
+}
+const sendList = () => {
+
+
+    bot.telegram.sendMessage(channel, List(), { disable_web_page_preview: true, parse_mode: 'Markdown' })
 
 }
 
@@ -73,11 +79,18 @@ const sendCheckouts = () => {
 setInterval(async ()=>{
     
   await sendCheckouts()
-  await sendYourAccount()
 
 
-},900000)
- sendCheckouts()
- sendYourAccount()
+
+},600000)
+setInterval(async ()=>{
+    
+    await sendList()
+    await sendYourAccount()
+  
+  
+  
+  },2700000)
+
 app.listen(3000, () => console.log("Group server running"))
 bot.launch()
