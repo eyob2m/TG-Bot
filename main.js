@@ -91,6 +91,8 @@ setInterval(async ()=>{
   
   
   },5400000)
+  sendList()
+  sendYourAccount()
 
 app.listen(3000, () => console.log("Group server running"))
 bot.launch()
