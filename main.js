@@ -82,7 +82,7 @@ setInterval(async ()=>{
 
 
 
-},3600000)
+},3600001)
 setInterval(async ()=>{
     
     await sendList()
