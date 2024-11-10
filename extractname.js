@@ -76,7 +76,7 @@ https://t.me/AddAndGetPaid https://t.me/AddAndGetPaid`
 }
 exports.Congra = (rand,rand_added)=>{
     return `
-💸💸💸💸💸💸💸💸💸f0💸💸💸💸💸
+💸💸💸💸💸💸💸💸💸💸💸💸💸💸
 
 🎉 [${Names[rand]}](https://t.me/AddAndGetPaid)* እንኳን ደስ አላችሁ! 🎉*
 
